@@ -1,0 +1,177 @@
+
+
+/** fonts **/
+@font-face { 
+	font-family: 'Chalet'; 
+	src: url('../fonts/Chalet.eot'); 
+	src: url('../fonts/Chalet.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/Chalet.woff') format('woff'), 
+		url('../fonts/Chalet.ttf') format('truetype'), 
+		url('../fonts/Chalet.svg#Chalet') format('svg'); 
+	font-weight: normal; 
+	font-style: normal; 
+} 
+
+
+body{
+	font-family: "Chalet" ,helvetica ,verdana;
+	font-size: 16px;
+	background:url(../img/gun_metal.png);
+	color: white;
+	overflow: hidden;
+	width: 100%;
+}
+img{
+	width: 100%;
+	max-width: 100px;
+}
+ footer{
+	margin: 0 auto;
+	max-width: 95%;
+	min-width: 60px;
+	text-align: center;
+	background: red;
+}
+.contenedor{
+	width: 95%;
+	margin: 0 auto;
+}
+#solucion{
+	width: 60%;
+	margin: 0 auto;
+	background: pink;
+}
+#jugadas{
+	float: left;
+	/*background: red;*/
+	width: 65%;
+}
+
+#aciertos{
+	float: right;
+	background: green;
+	width: 25%;
+}
+#posibilidades{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	background: #555;
+}
+.jugvacia{
+	background: #555;
+	width: 100%;
+	margin: 0.1em;
+}
+.cero, .uno , .dos, .tres , .cuatro , .cinco ,.seis , .siete, .ocho, .nueve {
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	min-width: 40px;
+	min-height: 40px;
+	display: inline-block;
+	cursor: pointer;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	-ms-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}/*
+#posibilidades .cero:hover,#posibilidades .uno:hover ,#posibilidades .dos:hover,#posibilidades .tres:hover ,#posibilidades .cuatro:hover ,#posibilidades .cinco:hover ,#posibilidades .seis:hover#posibilidades, .siete:hover,#posibilidades .ocho:hover,#posibilidades .nueve:hover{
+	background-size: 60px 60px;
+	min-width: 60px;
+	min-height: 60px;
+}
+.cero:hover, .uno:hover , .dos:hover, .tres:hover , .cuatro:hover , .cinco:hover , .seis:hover, .siete:hover, .ocho:hover, .nueve:hover{
+	background-size: 60px 60px;
+	min-width: 60px;
+	min-height: 60px;
+}*/
+.vacio{
+	background-image: url(../img/vacio.png) ;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	min-width: 40px;
+	min-height: 40px;
+	display: inline-block;
+	
+}
+{
+	background-size: 40px 40px;
+	min-width: 40px;
+	min-height: 40px;
+}
+
+.cero{
+	background-image: url(../img/rojo.png) ;
+}
+.uno{
+	background-image: url(../img/azul.png) ;
+}
+.dos{
+	background-image: url(../img/rosa.png) ;
+}
+.tres{
+	background-image: url(../img/amarillo.png) ;
+}
+.cuatro{
+	background-image: url(../img/verde.png) ;
+}
+.cinco{
+	background-image: url(../img/naranja.png) ;
+}
+.seis{
+	background-image: url(../img/negro.png) ;
+}
+.siete{
+	background-image: url(../img/morado.png) ;
+}
+.ocho{
+	background-image: url(../img/gris.png) ;
+}
+.nueve{
+	background-image: url(../img/blanco.png) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************
+
+media queries
+
+**********************************************************/
+@media(min-width: 769px){
+	
+	.cero, .uno , .dos, .tres , .cuatro , .cinco ,.seis , .siete, .ocho, .nueve , .vacio{
+		background-size: 100px 100px;
+		min-width: 100px;
+		min-height: 100px;
+	}
+	/*#posibilidades .cero:hover,#posibilidades .uno:hover ,#posibilidades .dos:hover,#posibilidades .tres:hover ,#posibilidades .cuatro:hover ,#posibilidades .cinco:hover ,#posibilidades .seis:hover#posibilidades, .siete:hover,#posibilidades .ocho:hover,#posibilidades .nueve:hover{
+		background-size: 130px 130px;
+		min-width: 130px;
+		min-height: 130px;
+	}*/
+}
+@media(min-width: 480px) and (max-width: 768px){
+	
+	.cero, .uno , .dos, .tres , .cuatro , .cinco ,.seis , .siete, .ocho, .nueve  , .vacio{
+		background-size: 70px 70px;
+		min-width: 70px;
+		min-height: 70px;
+	}
+	/*#posibilidades .cero:hover,#posibilidades .uno:hover ,#posibilidades .dos:hover,#posibilidades .tres:hover ,#posibilidades .cuatro:hover ,#posibilidades .cinco:hover ,#posibilidades .seis:hover#posibilidades, .siete:hover,#posibilidades .ocho:hover,#posibilidades .nueve:hover{
+		background-size: 100px 100px;
+		min-width: 100px;
+		min-height: 100px;
+	}*/
+}
